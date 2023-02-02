@@ -1,8 +1,8 @@
 import React from "react";
-import "./contact.css"
+import "./contact.css";
 const Contact = () => {
   return (
-    <section className="section" id="contact">
+    <section className="contact-section" id="contact">
       <article className="contact-summary-section">
         <h3 className="title-heading mt-4">Let's talk about everything!</h3>
         <p className="text-muted f-17 mt-3">
@@ -13,40 +13,43 @@ const Contact = () => {
         <img className="underline-img" src={"./assets/img/underline.svg"} />
       </article>
       <div className="contact-input-section">
-        <figure className="mt-4 home-img text-center bg-contact-img-container">
+        <div className="mt-4 home-img text-center bg-contact-img-container">
           <div className="animation-2"></div>
           <div className="animation-3"></div>
           <img className="img-fluid" src={"./assets/img/bg_1.svg"} />
-        </figure>
-        <form method="post" name="contact-form" id="contact-form" className="">
-          <div className="row">
-            <div className="col-lg-6">
-              <div className="mt-3 form-group">
-                <label className="contact-lable">First Name</label>
-                <input
-                  name="name"
-                  id="name"
-                  type="text"
-                  className="form-control form-control"
-                />
-              </div>
+        </div>
+        <form
+          method="post"
+          name="contact-form"
+          id="contact-form"
+          className=""
+          // style={{ width: "45%" }}
+        >
+          <div style={{ display:"flex" ,  }}>
+            <div className="mt-3 form-group">
+              {/* <label className="contact-lable">First Name</label> */}
+              <input
+                name="name"
+                id="name"
+                type="text"
+                className="form-control "
+              />
             </div>
-            <div className="col-lg-6">
-              <div className="mt-3 form-group">
-                <label className="contact-lable">Last Name</label>
-                <input
-                  name="name"
-                  id="lastname"
-                  type="text"
-                  className="form-control form-control"
-                />
-              </div>
+
+            <div className="mt-3 form-group">
+              {/* <label className="contact-lable">Last Name</label> */}
+              <input
+                name="name"
+                id="lastname"
+                type="text"
+                className="form-control margin-left"
+              />
             </div>
           </div>
-          <div className="row">
+          <div className="">
             <div className="col-lg-12">
               <div className="mt-3 form-group">
-                <label className="contact-lable">Email Address</label>
+                {/* <label className="contact-lable">Email Address</label> */}
                 <input
                   name="email"
                   id="email"
@@ -59,7 +62,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-lg-12">
               <div className="mt-3 form-group">
-                <label className="contact-lable">Your Message</label>
+                {/* <label className="contact-lable">Your Message</label> */}
                 <textarea
                   name="comments"
                   id="comments"

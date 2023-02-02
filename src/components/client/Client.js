@@ -2,7 +2,7 @@ import React from "react";
 import "./client.css";
 const Client = () => {
   return (
-    <section className="section bg-light bg-clients">
+    <section className="client-section bg-light ">
       <article className="clients-summary-section">
         <h1 className="title-heading mt-4">All Trusted Brands</h1>
         <p className="text-muted f-17 mt-3">
@@ -12,7 +12,7 @@ const Client = () => {
         </p>
         <img className="underline-img" src={"./assets/img/underline.svg"} />
       </article>
-      <div className="mt-5 pt-4 row">
+      <div className="mt-5 pt-4 row1">
         <div className="col-lg-3">
           <div className="client-images mt-4">
             <img

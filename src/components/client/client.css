@@ -1,3 +1,6 @@
+.client-section{
+  padding: 4rem 5rem;
+}
 .bg-clients .client-images img {
   opacity: 0.5;
 }
@@ -18,9 +21,22 @@
   height: auto;
 }
 .clients-summary-section {
-  margin-left: 256px;
-  margin-right: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+
 }
 .bg-clients {
   border-radius: 0 0 300px 0;
+}
+.row1 {
+  padding: 4rem 0;
+  /* background-color: red; */
+  display: -webkit-flex;
+  justify-content: space-around;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }

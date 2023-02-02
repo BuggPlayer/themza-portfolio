@@ -1,19 +1,25 @@
+.contact-section {
+  padding: 3rem 5rem;
+}
 .title-box,
 .title-heading {
   font-size: 30px;
 }
 
 .contact-summary-section {
-  margin-left: 256px;
-  margin-right: 256px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bg-contact-img-container {
-  margin-left: 256px;
+  margin-left: 116px;
 }
 
 .contact-input-section {
   display: flex;
+  /* background-color: red; */
+  padding-top: 3rem ;
 }
 
 .my-3 {
@@ -82,4 +88,7 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+.margin-left{
+  margin-left: 1rem;
 }
