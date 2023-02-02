@@ -1,0 +1,38 @@
+.section-demo-flex {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+.demo-p-text-w {
+    display: inline-block;
+    width: 60%;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+.btn-rounded {
+  border-radius: 30px;
+  /* background-color: red; */
+  /* width: 50%; */
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+margin: 1.4rem 0;
+
+  
+}
+
+.btn-soft-primary {
+  background-color: rgba(30, 165, 154, 0.25);
+  color: #1ea59a;
+  margin-right: 15px;
+}

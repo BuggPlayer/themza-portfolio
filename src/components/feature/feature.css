@@ -1,0 +1,31 @@
+.bg-features {
+  /* border-radius: 0 0 350px 0; */
+  display: flex;
+  padding: 5rem;
+}
+.bg-feature-details-section {
+width: 67%;
+}
+.bg-feature-img-container {
+  width: 33%;
+
+}
+
+.bg-feature-details-heading {
+
+  font-weight: 700;
+  line-height: 1.4;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.f-17 {
+  font-size: 17px;
+}
+
+
