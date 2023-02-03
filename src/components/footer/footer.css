@@ -1,5 +1,8 @@
-
 .bg-footer {
-    border-radius: 450px 0 0 0;
-  }
-  
+  border-radius: 450px 0 0 0;
+}
+
+.message-send-icon {
+  height: auto;
+  width: 200px;
+}
