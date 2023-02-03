@@ -36,12 +36,6 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-.text-muted {
-  color: #828f99;
-  font-size: 1.2rem;
-  font-family: "Nunito Sans", sans-serif;
-}
-
 .btn {
   padding: 0.6rem 1.3rem;
   text-align: center;
@@ -103,17 +97,16 @@
   width: 25px;
   height: 25px;
 }
-.last-container{
+.last-container {
   display: flex;
-
 }
 .img-fluid {
   width: 100%;
   height: 100%;
 }
-.videoiconflex{
+.videoiconflex {
   display: flex;
   align-items: center;
   justify-items: center;
-  margin-left:2rem;
+  margin-left: 2rem;
 }

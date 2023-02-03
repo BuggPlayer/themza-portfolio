@@ -22,10 +22,10 @@ const Home = () => {
       <Demo />
       <Contact />
       <Client />
+      <Team />
+      <Testimonial />
 
       {/* 
-       <Team />
-      <Testimonial />
       <Footer /> */}
     </>
   );

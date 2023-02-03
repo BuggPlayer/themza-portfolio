@@ -1,4 +1,5 @@
 import React from "react";
+import { TestimonialCarousel } from "../carousel/TestimonialCarousel";
 
 const Testimonial = () => {
   return (
@@ -12,7 +13,7 @@ const Testimonial = () => {
         </p>
         <img className="underline-img" src={"./assets/img/underline.svg"} />
       </article>
-      <div className="mt-5 pt-4 row">CAROUSEL</div>
+      <TestimonialCarousel />
     </section>
   );
 };

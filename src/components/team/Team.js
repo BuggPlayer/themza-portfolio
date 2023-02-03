@@ -1,8 +1,10 @@
 import React from "react";
 import "./team.css";
+import {TeamCarousel} from "../carousel/TeamCarousel";
+
 const Team = () => {
   return (
-    <section id="team">
+    <section id="team" className="team-section">
       <article className="team-summary-section">
         <h1 className="title-heading mt-4">Meet Our Expert People</h1>
         <p className="text-muted f-17 mt-3">
@@ -12,7 +14,7 @@ const Team = () => {
         </p>
         <img className="underline-img" src={"./assets/img/underline.svg"} />
       </article>
-      <div className="mt-5 pt-4 row">CAROUSEL</div>
+      <TeamCarousel />
     </section>
   );
 };
