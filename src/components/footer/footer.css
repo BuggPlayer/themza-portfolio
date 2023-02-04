@@ -1,8 +1,51 @@
 .bg-footer {
-  border-radius: 450px 0 0 0;
+  padding: 4rem 5rem;
+}
+
+.subscribe form {
+  position: relative;
+  max-width: 400px;
+}
+.subscribe input {
+  width: 100%;
+  font-size: 15px;
+  color: #828f99;
+  border: none;
+  outline: none;
+  padding: 12px 75px 12px 15px;
+  background-color: rgba(30, 165, 154, 0.1);
+  border-radius: 5px;
+  height: 46.5px;
+}
+
+.subscribe button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  padding: 2px 12px;
+  font-size: 25px;
+  height: 42.5px;
+}
+
+.footer-link a {
+  color: #828f99;
+  line-height: 38px;
+  font-size: 15px;
 }
 
 .message-send-icon {
   height: auto;
-  width: 200px;
+  width: 16px;
+}
+
+.footer-section {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-copyright-section {
+  border-top: 1px solid #828f99;
 }
