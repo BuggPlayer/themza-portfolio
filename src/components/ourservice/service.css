@@ -93,7 +93,6 @@
   display: flex;
   /* background-color: red; */
   padding: 0 6rem;
-
 }
 
 .services-details-subheading {
@@ -103,7 +102,7 @@
 .services-details-heading {
   line-height: 1.4;
 }
-.services-details-article{
+.services-details-article {
   width: 85%;
   /* background-color: red; */
 }
@@ -119,7 +118,6 @@
   color: #1ea59a;
   border: 1px solid #1ea59a;
 }
-
 
 .service-details-cards-container {
   display: flex;
@@ -171,4 +169,16 @@
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: center;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .bg-services {
+    margin-top: 300px;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
 }

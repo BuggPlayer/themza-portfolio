@@ -2,10 +2,12 @@
   display: flex;
   padding: 1rem 6rem;
   gap: 50px;
+  flex-wrap: wrap;
 }
 
 .team-card-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .team-box,

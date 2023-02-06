@@ -22,7 +22,11 @@ function Navbar() {
     >
       <nav className="nav-links-container">
         <div className="logo-image-container">
-          <a href="#home" className="nav-link-anchor">
+          <a
+            onClick={() => setShowHeader(false)}
+            href="#home"
+            className="nav-link-anchor"
+          >
             <img
               className="logo-image"
               src={"./assets/img/logo.svg"}

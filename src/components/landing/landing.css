@@ -110,3 +110,15 @@
   justify-items: center;
   margin-left: 2rem;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .home-flex {
+    flex-direction: column;
+  }
+
+  .home-img {
+    margin-top: 50px;
+  }
+}

@@ -36,3 +36,11 @@ margin: 1.4rem 0;
   color: #1ea59a;
   margin-right: 15px;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .pricing-card-container {
+    flex-direction: column;
+  }
+}

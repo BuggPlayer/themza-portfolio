@@ -92,3 +92,11 @@ textarea {
 .margin-left{
   margin-left: 1rem;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .contact-input-section {
+    flex-direction: column;
+  }
+}

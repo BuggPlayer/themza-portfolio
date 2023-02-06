@@ -3,7 +3,6 @@
   width: 100%;
   z-index: 999;
   background-color: #f0f9fa;
-  transition: all 0.5s ease-in-out;
 }
 
 .nav-links-container {
@@ -59,7 +58,7 @@
 
 /* Responsive */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1200px) {
   header {
     position: fixed;
   }
@@ -100,18 +99,9 @@
     display: flex;
   }
 
-  .nav-link-anchor:hover {
-    background: rgb(193, 82, 82);
-  }
-
   .close,
   .hamburger {
     text-align: end;
-  }
-
-  .close:hover,
-  .hamburger:hover {
-    background: transparent;
   }
 
   .nav-link-anchor {

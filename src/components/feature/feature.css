@@ -4,15 +4,13 @@
   padding: 5rem;
 }
 .bg-feature-details-section {
-width: 67%;
+  width: 67%;
 }
 .bg-feature-img-container {
   width: 33%;
-
 }
 
 .bg-feature-details-heading {
-
   font-weight: 700;
   line-height: 1.4;
   font-size: 2rem;
@@ -28,4 +26,10 @@ width: 67%;
   font-size: 17px;
 }
 
+/* Responsive */
 
+@media screen and (max-width: 1200px) {
+  .services-details-section {
+    flex-direction: column;
+  }
+}

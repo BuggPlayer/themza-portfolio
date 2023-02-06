@@ -79,13 +79,23 @@
   margin: 10px;
   position: relative;
 }
-.pricing-card-main-img{
+
+.pricing-card-main-img {
   width: 45px;
 }
+
 .pricing-box .plan {
   font-size: 34px;
 }
 
 .text-primary {
   color: #1ea59a;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px) {
+  .bg-features {
+    flex-direction: column;
+  }
 }
