@@ -29,7 +29,7 @@ function Navbar() {
           >
             <img
               className="logo-image"
-              src={"./assets/img/logo.svg"}
+              src={"./assets/img/logo.jpeg"}
               alt="logo"
             />
           </a>

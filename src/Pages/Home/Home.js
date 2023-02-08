@@ -14,7 +14,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Landing />
       <OurService />
       <Feature />

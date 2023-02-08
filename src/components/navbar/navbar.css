@@ -18,8 +18,9 @@
 }
 
 .logo-image {
-  width: 6.8125rem;
-  height: 1.375rem;
+height: 60px;
+width: 60px;
+border-radius: 80px;
 }
 
 .nav-links {

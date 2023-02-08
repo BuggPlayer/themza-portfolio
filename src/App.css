@@ -1,16 +1,15 @@
-*,
-:after,
-:before {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-}
-
-ul {
+  border: 0;
+  outline: 0;
+  text-decoration: none;
   list-style: none;
 }
 
 body {
-  padding: 0;
-  margin: 0;
+ 
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -61,10 +60,7 @@ p {
   margin-bottom: 1rem;
 }
 
-.mb-0,
-.my-0 {
-  margin-bottom: 0;
-}
+
 
 .hide-class {
   display: none;
@@ -72,20 +68,9 @@ p {
 
 
 
-.mt-3,
-.my-3 {
-  margin-top: 1rem;
-}
 
-.pt-2,
-.py-2 {
-  padding-top: 0.5rem;
-}
 
-.mt-4,
-.my-4 {
-  margin-top: 1.5rem;
-}
+
 
 img {
   width: 100%;
@@ -180,9 +165,99 @@ h6 {
   line-height: 1.4;
 }
 
+/* ///////////////////////////////GLOBAL CSS */
+:root {
+  --color-primary: #6c63ff;
+  --color-success: #00bf8e;
+  --color-warning: #f7c94b;
+  --color-danger: #f75842;
+  --color-danger-varinat: rgba(247, 88, 66, 0.4);
+  --color-white: #fff;
+  --color-bg1: #f0f9fa;
+  --color-btn-bg: #1ea59a;
+  --color-btn-text: #fff;
+  --color-text-subtitle:#828f99;
+  /* --color-link:"" */
+
+  --container-width-lg: 76%;
+  --container-width-md: 90%;
+  --container-width-sm: 94%;
+
+  --transition: all 400ms ease;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+.bg-color-main {
+  background-color: var(--color-bg1);
+}
+.mdi-play-circle-outline {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+.videoiconflex {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-left: 2rem;
+}
+
+.btn-primary {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+}
+.btn {
+  padding: 0.6rem 1.3rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.underline-img {
+  height: 0.9375rem;
+  width: 7.6338rem;
+  margin-top: 0.5rem;
+}
 .text-muted {
   color: #828f99;
   font-family: "Nunito Sans", sans-serif;
+  width: 70%;
 }
 
 /* Responsive */
+
+@media screen and (min-width: 769px) {
+  /* STYLES HERE */
+
+  /* body {
+    background-color: red;
+  } */
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  /* body {
+    background-color: yellow;
+  } */
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* body {
+    background-color: green;
+  } */
+}

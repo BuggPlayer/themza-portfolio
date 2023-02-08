@@ -1,37 +1,32 @@
-.bg-services {
-  /* background-color: greenyellow; */
-  /* background-image: url("./assets/img/services-bg-image.svg"); */
-}
-.section {
-  padding: 5rem 0;
-}
-
 .services-content {
-  margin-left: 256px;
-  margin-right: 256px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .services-content-heading {
-  font-size: 30px;
-  margin-top: 1.5rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.4;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .services-content-para {
-  color: #828f99;
-  font-size: 17px;
+  color: var(--color-text-subtitle);
+  font-size: 1.2rem;
   margin-top: 1rem;
   line-height: 1.7;
   margin-bottom: 1rem;
   text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .cards-container {
-  /* background-color: red; */
+  /* background-color: gray; */
   margin: 3rem 0;
   display: flex;
   flex-wrap: nowrap;
@@ -66,18 +61,21 @@
   line-height: 1.4;
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .card-para {
-  color: #828f99;
+  color: var(--color-text-subtitle);
   margin-top: 1rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .card-link {
-  color: #1ea59a;
-  font-size: 16px;
+  color: var(--color-btn-bg);
+  font-size: 1rem;
   display: flex;
   align-items: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .forward-icon {
@@ -87,36 +85,43 @@
   margin-left: 10px;
 }
 
+/* //////////////whychooseus */
+
 .services-details-section {
   padding-top: 1.5rem;
   margin-top: 3rem;
   display: flex;
-  /* background-color: red; */
+  /* background-color: green; */
   padding: 0 6rem;
 }
 
 .services-details-subheading {
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
   text-transform: uppercase;
 }
 
 .services-details-heading {
   line-height: 1.4;
+  font-size: 2rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 .services-details-article {
-  width: 85%;
-  /* background-color: red; */
+  width: 78%;
+  padding: 1.5rem 0;
+  /* background-color: rgb(174, 119, 119); */
 }
 .service-details-description {
   line-height: 1.4;
-  color: #828f99;
+  color: var(--color-text-subtitle);
   margin-top: 1rem;
-  width: 70%;
+  width: 85%;
 }
 
 .service-details-btn {
   margin-top: 1.5rem;
-  color: #1ea59a;
-  border: 1px solid #1ea59a;
+  color: var(--color-btn-bg);
+  border: 1px solid var(--color-btn-bg);
 }
 
 .service-details-cards-container {
@@ -127,32 +132,38 @@
 .service-detail-card {
   display: flex;
   align-items: center;
+  /* background-color: rgb(229, 223, 223); */
 }
 
 .service-detail-card-box {
-  margin: 10px;
-  padding: 13px 20px;
+  padding: 0.5rem;
+  margin: 0.6rem;
+  /* padding: 13px 20px; */
   border-radius: 10px;
-  background-color: rgba(30, 165, 154, 0.1);
-  text-align: center;
+  background-color: rgba(98, 119, 210, 0.1);
+  /* text-align: center;
   align-self: center;
   align-items: center;
-  justify-items: center;
+  justify-items: center; */
+  border: 1px solid black;
 }
 
 .service-detail-card-box-total-value {
   font-size: 1.75rem;
-  color: #1ea59a;
+  color: var(--color-btn-bg);
   text-align: center;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .service-detail-card-box-total-plus {
-  font-size: 20px;
+  font-size: 1.5rem;
   position: relative;
   top: -8px;
   color: #1ea59a;
   font-weight: 700;
   line-height: 1.4;
+  font-family: "Nunito Sans", sans-serif;
+
   text-align: center;
 }
 
@@ -160,12 +171,14 @@
   color: #828f99;
   text-transform: uppercase;
   margin-bottom: 0;
+  padding: 0;
+  /* line-height: 1; */
   text-align: center;
 }
 
 .service-detail-card-description {
   color: #828f99;
-  font-size: 14px;
+  font-size: .9rem;
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: center;
@@ -173,12 +186,53 @@
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
-  .bg-services {
-    margin-top: 300px;
+/* //// for Tab */
+@media screen and (max-width: 1024px) {
+  .services-content {
+    /* background:gray; */
+    padding: 1rem;
   }
-
+  .services-content-para {
+    width: 95%;
+  }
   .cards-container {
     flex-direction: column;
+    margin: 1rem 0;
+  }
+  .cards-container {
+    padding: 0;
+  }
+
+  .services-details-section {
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    padding: 0 1.5rem;
+  }
+  .services-details-article {
+    width: 95%;
+    padding: 0.5rem 0;
+    /* background-color: rgb(174, 119, 119); */
+  }
+  .service-details-description {
+    /* line-height: 1; */
+    color: var(--color-text-subtitle);
+    margin-top: 1rem;
+    width: 100%;
+    /* text-align: center; */
+  }
+}
+
+/* ////for MOBILE  */
+@media screen and (max-width: 600px) {
+  .services-content {
+    padding: 0.5rem;
+  }
+  .cards-container {
+    flex-direction: column;
+    margin: 0.5rem 0;
+  }
+  .services-content-para {
+    width: 95%;
   }
 }
