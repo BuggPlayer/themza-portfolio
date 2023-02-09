@@ -29,7 +29,8 @@
   /* background-color: gray; */
   margin: 3rem 0;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 0 5rem;
 }
 
@@ -39,6 +40,13 @@
   margin: 1.2rem;
   box-shadow: 0 5px 30px -10px rgb(0 0 0 / 10%);
   border-radius: 20px;
+  /* background-color: red; */
+  width: 30%;
+ 
+}
+.card:hover{
+  background-color: var( --color-bg1);
+
 }
 
 .card-image-container {
@@ -132,15 +140,18 @@
 .service-detail-card {
   display: flex;
   align-items: center;
+  /* background-color: yellow; */
   /* background-color: rgb(229, 223, 223); */
 }
 
 .service-detail-card-box {
+  /* background-color: red; */
   padding: 0.5rem;
   margin: 0.6rem;
+  width: 23%;
   /* padding: 13px 20px; */
   border-radius: 10px;
-  background-color: rgba(98, 119, 210, 0.1);
+  /* background-color: rgba(98, 119, 210, 0.1); */
   /* text-align: center;
   align-self: center;
   align-items: center;
@@ -149,10 +160,12 @@
 }
 
 .service-detail-card-box-total-value {
+  margin: 0;
   font-size: 1.75rem;
   color: var(--color-btn-bg);
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
+  
 }
 
 .service-detail-card-box-total-plus {
@@ -168,20 +181,25 @@
 }
 
 .service-detail-card-box-type {
+  display: inline;
+  /* background-color: green; */
   color: #828f99;
   text-transform: uppercase;
-  margin-bottom: 0;
+  margin: 0;
+  font-size: 0.8rem;
   padding: 0;
-  /* line-height: 1; */
-  text-align: center;
+  line-height: 1;
+  /* text-align: center; */
 }
 
 .service-detail-card-description {
+  /* background-color: pink; */
   color: #828f99;
   font-size: .9rem;
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: center;
+  width: 60%;
 }
 
 /* Responsive */
@@ -198,11 +216,19 @@
   .cards-container {
     flex-direction: column;
     margin: 1rem 0;
+    flex-wrap: nowrap;
+
   }
-  .cards-container {
-    padding: 0;
+  .card {
+    width: 100%;
+   
   }
 
+.cards-container {
+
+  padding: 0 3rem;
+}
+ 
   .services-details-section {
     flex-direction: column;
     padding-top: 1.5rem;
