@@ -24,11 +24,14 @@
 
 /* //// for Tab */
 @media screen and (max-width: 1024px) {
+  section {
+    padding: 0;
+  }
   .home-flex {
     flex-direction: column;
   }
   .home-content {
-    width: 90%;
+    width: 95%;
     margin: 0 auto;
   }
   .home-img {
@@ -39,6 +42,9 @@
 
 /* ////for MOBILE  */
 @media screen and (max-width: 600px) {
+  section {
+    padding: 0;
+  }
   .home-content {
     width: 95%;
     margin: 0 auto;
@@ -50,6 +56,6 @@
   .text-subtile {
     color: #828f99;
     font-family: "Nunito Sans", sans-serif;
-    width: 80%;
+    width: 95%;
   }
 }

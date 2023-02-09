@@ -2,10 +2,10 @@ import React from "react";
 import "./client.css";
 const Client = () => {
   return (
-    <section className="client-section bg-light ">
+    <section className="client-section bg-color-main ">
       <article className="clients-summary-section">
-        <h1 className="title-heading mt-4">All Trusted Brands</h1>
-        <p className="text-muted f-17 mt-3">
+        <h1 className="title-heading ">All Trusted Brands</h1>
+        <p className="text-muted">
           Vivamus ac nulla ultrices laoreet neque mollis mi morbi elementum
           mauris sit amet arcu <br /> fringilla auctor In eleifend maximus nisi
           sed vulputate.

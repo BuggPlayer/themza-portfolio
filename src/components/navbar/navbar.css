@@ -18,9 +18,9 @@
 }
 
 .logo-image {
-height: 60px;
-width: 60px;
-border-radius: 80px;
+  height: 60px;
+  width: 60px;
+  border-radius: 10px;
 }
 
 .nav-links {
@@ -62,6 +62,7 @@ border-radius: 80px;
 @media screen and (max-width: 1200px) {
   header {
     position: fixed;
+    background-color: transparent;
   }
 
   .nav-links-section {
@@ -81,6 +82,7 @@ border-radius: 80px;
   }
 
   .nav-links {
+     
     display: none;
     flex-direction: column;
     align-items: center;
@@ -91,22 +93,31 @@ border-radius: 80px;
   }
 
   .menu-icon {
-    height: 16px;
-    width: 16px;
+    height: 22px;
+    width: 22px;
     cursor: pointer;
+    /* background-color: yellow; */
   }
 
   .flex-display {
     display: flex;
+  
   }
 
   .close,
   .hamburger {
-    text-align: end;
+    
+    text-align: center;
+margin: 0.8rem 0;
+    /* background-color: red; */
+    width: 10%;
+    /* padding: 0 .5rem; */
   }
 
   .nav-link-anchor {
-    width: 100%;
+   
+    /* background-color: pink; */
+
   }
 
   .logo-image-container {

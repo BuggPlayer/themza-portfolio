@@ -204,6 +204,7 @@
   }
 
   .services-details-section {
+    flex-direction: column;
     padding-top: 1.5rem;
     margin-top: 2rem;
     display: flex;

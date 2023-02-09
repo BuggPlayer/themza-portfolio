@@ -1,15 +1,26 @@
+.carousal-section {
+  padding: 4rem 0;
+}
 .team-carousel {
   display: flex;
   padding: 1rem 6rem;
-  gap: 50px;
-  flex-wrap: wrap;
 }
 
 .team-card-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
-
+.team-card-detail {
+  width: 45%;
+  /* background-color: red; */
+}
+.carosual-subtitle {
+  width: 90%;
+  font-size: 0.9rem;
+  font-family: "Nunito Sans", sans-serif;
+  margin: 0.6rem 0;
+}
 .team-box,
 .team-badge {
   padding: 3px 10px;
@@ -32,6 +43,7 @@
   border: 2px solid #dbf1f1;
   display: flex;
   justify-content: center;
+  margin: 1rem 0;
 }
 .social-media-logo {
   height: 16px;
@@ -51,4 +63,45 @@
   display: flex;
   gap: 10px;
   justify-content: center;
+  /* background-color: pink; */
+}
+
+/* Responsive */
+
+/* //// for Tab */
+@media screen and (max-width: 1024px) {
+  .carousal-section {
+    padding: 2rem 0;
+    justify-items: center;
+    /* background-color: pink; */
+  }
+  .team-carousel {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+  }
+  .team-card-detail {
+    width: 50%;
+    /* background-color: red; */
+  }
+  
+}
+/* ////for MOBILE  */
+@media screen and (max-width: 600px) {
+  .carousal-section {
+    padding: 2rem 0;
+    justify-items: center;
+    /* background-color: red; */
+  }
+  .team-carousel {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    flex-wrap: wrap;
+  }
+  .team-card-detail {
+    width: 90%;
+    /* background-color: red; */
+  }
+  
 }

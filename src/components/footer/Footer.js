@@ -107,7 +107,7 @@ const Footer = () => {
       </div>
       <div className="footer-copyright-section pt-5">
         <p className="text-center text-muted mb-0">
-          2023 &copy; Thamza. Develop by Themesdesign
+          2023 &copy; Buggplayer. Develop by Buggplayer
         </p>
       </div>
     </footer>

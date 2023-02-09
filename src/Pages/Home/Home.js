@@ -14,16 +14,17 @@ import "./Home.css";
 const Home = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       <Landing />
       <OurService />
       <Feature />
       <Priceing />
-      <Demo />
-      <Contact />
+      {/* <Demo /> */}
+     
       <Client />
       <Team />
       <Testimonial />
+      {/* <Contact /> */}
       <Footer />
     </>
   );

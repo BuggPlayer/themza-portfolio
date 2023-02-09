@@ -28,7 +28,7 @@ export const TeamCarousel = () => {
 
   return (
     <>
-      <div className="team-carousel">
+      <div className="carousal-section  team-carousel">
         {length &&
           carouselItems.map((item, indexReq) => (
             <section
@@ -42,7 +42,7 @@ export const TeamCarousel = () => {
                 <span className="team-badge bg-primary text-white rounded f-14 mt-2">
                   ##{item.user_badge}
                 </span>
-                <p className="text-muted mt-3">{item.description}</p>
+                <p className="carosual-subtitle">{item.description}</p>
                 <ul className="social-media-links mt-4 pt-2">
                   <li className="social-media-link-container">
                     <a href={item.fb_url} className="social-media-link">
@@ -82,13 +82,13 @@ export const TeamCarousel = () => {
                   </li>
                 </ul>
               </article>
-              <figure className="team-card-profile-image-container">
+              <div className="team-card-profile-image-container">
                 <img
                   className="team-card-profile-image img-fluid rounded"
                   src={item.profile_image}
                   alt="user"
                 />
-              </figure>
+              </div>
             </section>
           ))}
       </div>
@@ -103,7 +103,7 @@ export const TeamCarousel = () => {
                 onClick={() => currentCarouselBasedOnIndex(indexReq)}
               >
                 <img
-                className="carousel-btn-image"
+                  className="carousel-btn-image"
                   src={
                     index === indexReq
                       ? "../../../assets/img/dark_line_btn.svg"
