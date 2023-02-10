@@ -1,5 +1,6 @@
 .bg-footer {
   padding: 4rem 5rem;
+  /* background-color: red; */
 }
 
 .subscribe form {
@@ -32,7 +33,7 @@
 .footer-link a {
   color: #828f99;
   line-height: 38px;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .message-send-icon {
@@ -49,4 +50,61 @@
 
 .footer-copyright-section {
   border-top: 1px solid #828f99;
+  /* background-color: red; */
+  text-align: center;
+
+}
+.footer-p-text{
+  color: #828f99;
+  margin-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
+  width: 90%;
+}
+.footer-link-flex{
+  /* background-color: red; */
+  display: flex;
+  width: 20%;
+  margin: 1rem 0;
+  justify-content: space-between;
+}
+/* Responsive */
+
+/* //// for Tab */
+@media screen and (max-width: 1024px) {
+  .footer-section {
+    margin-bottom: 4rem;
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-items: center;
+    align-items: center;
+
+  }
+  .footer-article{
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .bg-footer {
+    padding: 1.5rem;
+    /* background-color: red; */
+  }
+  .footer-link-flex{
+    /* background-color: red; */
+    display: flex;
+    width: 80%;
+    margin: 1rem 0;
+    justify-content: space-between;
+  }
+}
+/* ////for MOBILE  */
+@media screen and (max-width: 600px) {
+  .bg-footer {
+    padding: 1.5rem;
+    /* background-color: red; */
+  }
 }

@@ -31,7 +31,7 @@ export const TestimonialCarousel = () => {
       <div className="testimonial-carousel">
         {length &&
           carouselItems.map((item, indexReq) => (
-            <section
+            <div
               key={indexReq}
               className={`testimonial-card-container ${
                 item.is_active === 1 ? "" : "hide-class"
@@ -49,14 +49,14 @@ export const TestimonialCarousel = () => {
                 <h5 className="f-18">{item.user_name}</h5>
                 <p className="text-primary mb-0">- {item.designation}</p>
               </article>
-              <figure className="testimonial-card-profile-image-container">
+              <div >
                 <img
-                  className="testimonial-card-profile-image img-fluid rounded"
+                  className=""
                   src={item.profile_image}
                   alt="user"
                 />
-              </figure>
-            </section>
+              </div>
+            </div>
           ))}
       </div>
       <div className="carousel-btn-section">

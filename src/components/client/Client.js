@@ -2,7 +2,7 @@ import React from "react";
 import "./client.css";
 const Client = () => {
   return (
-    <section className="client-section bg-color-main ">
+    <section className="client-section  ">
       <article className="clients-summary-section">
         <h1 className="title-heading ">All Trusted Brands</h1>
         <p className="text-muted">

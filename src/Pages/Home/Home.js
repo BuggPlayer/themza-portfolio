@@ -24,7 +24,7 @@ const Home = () => {
       <Client />
       <Team />
       <Testimonial />
-      {/* <Contact /> */}
+      <Contact />
       <Footer />
     </>
   );

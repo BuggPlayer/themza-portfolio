@@ -82,7 +82,6 @@
   }
 
   .nav-links {
-     
     display: none;
     flex-direction: column;
     align-items: center;
@@ -101,23 +100,20 @@
 
   .flex-display {
     display: flex;
-  
   }
 
   .close,
   .hamburger {
-    
     text-align: center;
-margin: 0.8rem 0;
+    margin: 0.8rem 1rem;
     /* background-color: red; */
-    width: 10%;
+
+    width: 15%;
     /* padding: 0 .5rem; */
   }
 
   .nav-link-anchor {
-   
     /* background-color: pink; */
-
   }
 
   .logo-image-container {

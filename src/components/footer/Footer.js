@@ -8,10 +8,10 @@ const Footer = () => {
         <article className="footer-article">
           <img
             className="logo-image"
-            src="../../../assets/img/logo.svg"
+            src="../../../assets/img/logo.png"
             alt="logo"
           />
-          <p className="text-muted mt-4 mb-2">
+          <p className="footer-p-text mt-4 mb-2">
             Aenean lacus enim Praesent congue praesent viverra interdum maximus
             lobortis.
           </p>
@@ -54,37 +54,40 @@ const Footer = () => {
             </li>
           </ul>
         </article>
-        <div className="footer-links">
-          <h5 className="f-20">Services</h5>
-          <ul className="list-unstyled footer-link mt-3">
-            <li>
-              <a href="/">Web Design</a>
-            </li>
-            <li>
-              <a href="/">Lorem Test</a>
-            </li>
-            <li>
-              <a href="/">Credit</a>
-            </li>
-            <li>
-              <a href="/">Ui Design</a>
-            </li>
-          </ul>
+        <div  className="footer-link-flex">
+          <div className="footer-links">
+            <h5 className="f-20">Services</h5>
+            <ul className="list-unstyled footer-link mt-3">
+              <li>
+                <a href="/">Web Design</a>
+              </li>
+              <li>
+                <a href="/">App Develop</a>
+              </li>
+              <li>
+                <a href="/">MERN</a>
+              </li>
+              <li>
+                <a href="/">Ui Design</a>
+              </li>
+            </ul>
+          </div>
+          <div className="footer-links">
+            <h5 className="f-20">Company</h5>
+            <ul className="list-unstyled footer-link mt-3">
+              <li>
+                <a href="/">Features</a>
+              </li>
+              <li>
+                <a href="/">Faq</a>
+              </li>
+              <li>
+                <a href="/">Contact us</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="footer-links">
-          <h5 className="f-20">Company</h5>
-          <ul className="list-unstyled footer-link mt-3">
-            <li>
-              <a href="/">Features</a>
-            </li>
-            <li>
-              <a href="/">Faq</a>
-            </li>
-            <li>
-              <a href="/">Contact us</a>
-            </li>
-          </ul>
-        </div>
+
         <div className="footer-subscribe">
           <h5 className="f-20">Subscribe</h5>
           <div className="subscribe mt-4 pt-1">
@@ -105,8 +108,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="footer-copyright-section pt-5">
-        <p className="text-center text-muted mb-0">
+      <div className="footer-copyright-section ">
+        <p className="text-center footer-p-text mb-0">
           2023 &copy; Buggplayer. Develop by Buggplayer
         </p>
       </div>

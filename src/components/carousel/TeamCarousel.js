@@ -28,7 +28,7 @@ export const TeamCarousel = () => {
 
   return (
     <>
-      <div className="carousal-section  team-carousel">
+      <div className="carousal-section  ">
         {length &&
           carouselItems.map((item, indexReq) => (
             <section
@@ -40,10 +40,12 @@ export const TeamCarousel = () => {
               <article className="team-card-detail">
                 <h5 className="mt-2">{item.user_name}</h5>
                 <span className="team-badge bg-primary text-white rounded f-14 mt-2">
-                  ##{item.user_badge}
+                  #{item.user_badge}
                 </span>
                 <p className="carosual-subtitle">{item.description}</p>
+                <p  style={{ color:"#1ea59a", marginTop:10}}>{item.skill}</p>
                 <ul className="social-media-links mt-4 pt-2">
+
                   <li className="social-media-link-container">
                     <a href={item.fb_url} className="social-media-link">
                       <img
@@ -63,7 +65,7 @@ export const TeamCarousel = () => {
                     </a>
                   </li>
                   <li className="social-media-link-container">
-                    <a href={item.pinterest_url} className="social-media-link">
+                    <a href={item.github} className="social-media-link">
                       <img
                         className="social-media-logo"
                         src="../../../assets/img/pinterest_logo.svg"

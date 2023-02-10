@@ -63,6 +63,25 @@ We have a proven track of great success stories, we work with clients ranging fr
 
 export const emplyeDetails = [
   { id: 1, name: "Developers", total: 10, desc: "REACT NODE EXPRESS JACASCRT" },
-  { id: 2, name: "Projects", total: 18, desc: "all domain like fintech , food , ecommerce , pharmacy" },
-  { id: 3, name: "Clinents", total: 30, desc: "all over the glob we have our clients" },
+  {
+    id: 2,
+    name: "Projects",
+    total: 18,
+    desc: "all domain like fintech , food , ecommerce , pharmacy",
+  },
+  {
+    id: 3,
+    name: "Clinents",
+    total: 30,
+    desc: "all over the glob we have our clients",
+  },
 ];
+
+// team
+export const meetTeam = `Meet Our Expert People`;
+export const teamsubtitle = `Some of the more rewarding projects we have had the honour to be involved in, started with simple ideas and grew profitable businesses from the ground up`;
+
+/// Contact us
+
+export const contactUsHeadling = "Let's talk about everything!";
+export const contactUsSubtitle=`We can help. Our team of export is on hand to answer your question`

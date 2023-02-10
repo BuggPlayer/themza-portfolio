@@ -3,7 +3,7 @@ import { TestimonialCarousel } from "../carousel/TestimonialCarousel";
 
 const Testimonial = () => {
   return (
-    <section className="bg-color-main" id="clients">
+    <section className="" id="clients">
       <article className="clients-summary-section">
         <h1 className="title-heading mt-4">Clients Loved Products</h1>
         <p className="text-muted f-17 mt-3">
