@@ -10,6 +10,7 @@ import OurService from "../../components/ourservice/OurService";
 import Priceing from "../../components/price/Priceing";
 import Team from "../../components/team/Team";
 import Testimonial from "../../components/testimonial/Testimonial";
+import { MvpLetsWorkTogether } from "../../components/mvp/MvpLetsWorkTogether";
 import "./Home.css";
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
       <Feature />
       <Priceing />
       {/* <Demo /> */}
-     
+      <MvpLetsWorkTogether />
       <Client />
       <Team />
       <Testimonial />
