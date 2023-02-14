@@ -7,7 +7,7 @@ export const Mvp = () => {
       <article className="mvp-content">
         <div>
           <div className="mvp-content-head">
-            <img src="" alt="square" />
+            <div className="square" />
             <h1 className="mvp-content-heading">
               From idea to prototype in 30 days.
             </h1>

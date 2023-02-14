@@ -10,6 +10,12 @@
   justify-content: space-between;
 }
 
+.mvp-content-head .square {
+  height: 15px;
+  width: 15px;
+  background: #000;
+}
+
 .mvp-content-heading {
   font-size: 2rem;
   font-weight: 700;
@@ -49,7 +55,7 @@
   display: flex;
 }
 
-.mvp-content-bubble img{
+.mvp-content-bubble img {
   height: 15px;
   width: 15px;
 }
