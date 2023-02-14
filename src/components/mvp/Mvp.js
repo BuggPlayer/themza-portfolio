@@ -23,9 +23,18 @@ export const Mvp = () => {
           </p>
           <div className="mvp-content-bubbles">
             {[
-              { icon: "", text: "We can start within 3 days" },
-              { icon: "", text: "First deliverables after 2 weeks" },
-              { icon: "", text: "Prototype ready in 30 days" },
+              {
+                icon: "../../../assets/img/messenger.svg",
+                text: "We can start within 3 days",
+              },
+              {
+                icon: "../../../assets/img/messenger.svg",
+                text: "First deliverables after 2 weeks",
+              },
+              {
+                icon: "../../../assets/img/messenger.svg",
+                text: "Prototype ready in 30 days",
+              },
             ].map((item, index) => (
               <figure key={index} className="mvp-content-bubble">
                 <img src={item.icon} alt="bubble_icon" />

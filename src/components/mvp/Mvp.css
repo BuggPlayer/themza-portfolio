@@ -49,6 +49,11 @@
   display: flex;
 }
 
+.mvp-content-bubble img{
+  height: 15px;
+  width: 15px;
+}
+
 .mvp-content-bubble-text {
   font-weight: bold;
 }
