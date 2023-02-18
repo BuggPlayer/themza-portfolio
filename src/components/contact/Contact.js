@@ -3,7 +3,7 @@ import { contactUsHeadling, contactUsSubtitle } from "../../utiliti/Data";
 import "./contact.css";
 const Contact = () => {
   return (
-    <section className="bg-color-main" id="contact">
+    <section className="" id="contact">
       <article className="contact-summary-section">
         <h3 className="title-heading ">{contactUsHeadling}</h3>
         <p className="text-muted">{contactUsSubtitle}</p>

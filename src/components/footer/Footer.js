@@ -3,7 +3,7 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="bg-light bg-footer pb-5">
+    <footer className="bg-light bg-color-main bg-footer pb-5">
       <div className="footer-section">
         <article className="footer-article">
           <img
@@ -12,8 +12,9 @@ const Footer = () => {
             alt="logo"
           />
           <p className="footer-p-text mt-4 mb-2">
-            Aenean lacus enim Praesent congue praesent viverra interdum maximus
-            lobortis.
+            Our goal is to help your brand to reach its ultimate goal with
+            Reasonable Time,<br/> Finance, Infrastructure and Support. We love when
+            you win every time!
           </p>
           <ul className="social-media-links mt-4 pt-2">
             <li className="social-media-link-container">
@@ -54,7 +55,7 @@ const Footer = () => {
             </li>
           </ul>
         </article>
-        <div  className="footer-link-flex">
+        <div className="footer-link-flex">
           <div className="footer-links">
             <h5 className="f-20">Services</h5>
             <ul className="list-unstyled footer-link mt-3">
@@ -65,7 +66,7 @@ const Footer = () => {
                 <a href="/">App Develop</a>
               </li>
               <li>
-                <a href="/">MERN</a>
+                <a href="/">MERN Stack</a>
               </li>
               <li>
                 <a href="/">Ui Design</a>

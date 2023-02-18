@@ -25,6 +25,7 @@ export const TestimonialCarousel = () => {
     });
     setCarouselItems(carouselItemsCopy);
   };
+  console.log(carouselItems);
 
   return (
     <>
@@ -49,12 +50,8 @@ export const TestimonialCarousel = () => {
                 <h5 className="f-18">{item.user_name}</h5>
                 <p className="text-primary mb-0">- {item.designation}</p>
               </article>
-              <div >
-                <img
-                  className=""
-                  src={item.profile_image}
-                  alt="user"
-                />
+              <div>
+                <img className="" src={item.profile_image} alt="user" />
               </div>
             </div>
           ))}

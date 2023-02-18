@@ -7,8 +7,8 @@
   padding: 4rem 0;
 }
 .demo-p-text-w {
-    display: inline-block;
-    width: 60%;
+  display: inline-block;
+  width: 60%;
 }
 
 .btn:not(:disabled):not(.disabled) {
@@ -26,9 +26,7 @@
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-margin: 1.4rem 0;
-
-  
+  margin: 1.4rem 0;
 }
 
 .btn-soft-primary {
@@ -39,8 +37,22 @@ margin: 1.4rem 0;
 
 /* Responsive */
 
-@media screen and (max-width: 1200px) {
-  .pricing-card-container {
-    flex-direction: column;
+/* //// for Tab */
+@media screen and (max-width: 1024px) {
+  .section-demo-flex {
+    display: flex;
+    padding: 2rem 0;
   }
+  section{
+    padding:1rem 0;
+  }
+  .demo-p-text-w {
+    margin: 1rem 0;
+    display: inline-block;
+    width: 90%;
+  }
+  
+}
+/* ////for MOBILE  */
+@media screen and (max-width: 600px) {
 }

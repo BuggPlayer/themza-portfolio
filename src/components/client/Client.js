@@ -17,7 +17,7 @@ const Client = () => {
           <div className="client-images mt-4">
             <img
               src={"./assets/img/sponsor_logo_1.svg"}
-              alt="logo-img"
+              alt="logo-img client-images-with"
               className="mx-auto img-fluid d-block"
             />
           </div>

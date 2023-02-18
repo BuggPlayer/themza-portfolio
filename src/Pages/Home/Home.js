@@ -19,12 +19,12 @@ const Home = () => {
       <Landing />
       <OurService />
       <Feature />
-      <Priceing />
-      {/* <Demo /> */}
+      {/* <Priceing /> */}
       <Mvp />
       <Client />
       <Team />
       <Testimonial />
+      <Demo />
       <Contact />
       <Footer />
     </>

@@ -3,7 +3,7 @@ import { landingHeader, landingSubtitle, landingTitle } from "../../utiliti/Data
 import "./landing.css";
 const Landing = () => {
   return (
-    <section className="bg-color-main " id="home">
+    <section className="bg-color-main" id="home">
       <div className="home-flex">
         <div className="home-content">
           <p className="">{landingTitle}</p>
