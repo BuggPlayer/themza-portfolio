@@ -1,3 +1,5 @@
+import "./Input.css";
+
 export const Input = ({
   addClass = "",
   addClass2 = "",
@@ -6,6 +8,8 @@ export const Input = ({
   fieldType = "",
   fieldId = "",
   value = "",
+  hasError = false,
+  errorMessage = "",
   onChange = () => {},
 }) => {
   return (
@@ -19,6 +23,7 @@ export const Input = ({
         className={addClass2}
         onChange={onChange}
       />
+      {hasError && <span className="error-message">{errorMessage}</span>}
     </div>
   );
 };

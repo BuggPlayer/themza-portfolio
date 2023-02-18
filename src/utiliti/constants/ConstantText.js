@@ -18,7 +18,9 @@ export const constantText = {
   NOT_A_STRING: "Not a string",
   ENTER_VALID_INPUT: "Enter valid input",
   ENTER_VALID_INPUTS: "Enter valid inputs",
-  NAME_VALIDATION_MESSAGE: "Name must be of minimum length 8 characters",
+  NAME_VALIDATION_MESSAGE: "First name must be of minimum length 8 characters",
+  LAST_NAME_VALIDATION_MESSAGE: "Last name must be of minimum length 8 characters",
+  COMMENTS_VALIDATION_MESSAGE: "Comments should be atleast two lines long.",
   EMAIL_VALIDATION_MESSAGE: "Enter valid email",
   PASSWORD_VALIDATION_MESSAGE: "Password must contain one digit from 1 to 9, one lowercase letter, one uppercase letter, one special character, no space, and it must be 8-16 characters long",
 };

@@ -123,6 +123,38 @@ export const validateInput = (
         });
       }
       return isValid;
+    case "lastname":
+      isValid = stringCount(inputElement).charactersNoSpaces > 8;
+      if (!isValid) {
+        setError({ ...error, lastname: true });
+        setErrorMessages({
+          ...errorMessages,
+          lastname: constantText.LAST_NAME_VALIDATION_MESSAGE,
+        });
+      } else {
+        setError({ ...error, lastname: false });
+        setErrorMessages({
+          ...errorMessages,
+          lastname: "",
+        });
+      }
+      return isValid;
+    case "comments":
+      isValid = stringCount(inputElement).lines > 1;
+      if (!isValid) {
+        setError({ ...error, comments: true });
+        setErrorMessages({
+          ...errorMessages,
+          comments: constantText.COMMENTS_VALIDATION_MESSAGE,
+        });
+      } else {
+        setError({ ...error, comments: false });
+        setErrorMessages({
+          ...errorMessages,
+          comments: "",
+        });
+      }
+      return isValid;
     case "email":
       isValid =
         isValidInput(inputElement, constantText.STRING) &&

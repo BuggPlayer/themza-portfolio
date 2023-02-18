@@ -6,12 +6,23 @@ import "./contact.css";
 
 const Contact = () => {
   const [formInput, setFormInput] = useState({
+    name: "",
+    lastname: "",
     email: "",
+    comments: "",
   });
   const [errorMessages, setErrorMessages] = useState({
+    name: "",
+    lastname: "",
     email: "",
+    comments: "",
   });
-  const [error, setError] = useState({ email: false, password: false });
+  const [error, setError] = useState({
+    name: false,
+    lastname: false,
+    email: false,
+    comments: false,
+  });
 
   const onSubmitHandler = async (ev) => {
     ev.preventDefault();
@@ -53,6 +64,9 @@ const Contact = () => {
         >
           <div className="contact-input-flex">
             <Input
+              value={formInput.name}
+              hasError={error.name}
+              errorMessage={errorMessages.name}
               addClass2="form-control"
               labelText="First Name"
               fieldName="name"
@@ -63,6 +77,9 @@ const Contact = () => {
               }}
             />
             <Input
+              value={formInput.lastname}
+              hasError={error.lastname}
+              errorMessage={errorMessages.lastname}
               addClass="mt-3 form-group"
               addClass2="form-control"
               labelText="Last Name"
@@ -77,6 +94,9 @@ const Contact = () => {
           <div className="">
             <div className="col-lg-12">
               <Input
+                value={formInput.email}
+                hasError={error.email}
+                errorMessage={errorMessages.email}
                 addClass="mt-3 form-group"
                 addClass2="form-control"
                 labelText="Email Address"
@@ -94,6 +114,7 @@ const Contact = () => {
               <div className="">
                 <label className="">Your Message</label>
                 <textarea
+                  value={formInput.comments}
                   onChange={(ev) => {
                     onChangeHandler(ev, "comments");
                   }}
@@ -102,6 +123,9 @@ const Contact = () => {
                   rows={4}
                   className="form-control form-control"
                 ></textarea>
+                {error.comments && (
+                  <span style={{ color: "red" }}>{errorMessages.comments}</span>
+                )}
               </div>
             </div>
           </div>
