@@ -26,6 +26,18 @@
 
 /* //// for Tab */
 @media screen and (max-width: 1024px) {
+  .row1 {
+    padding: 2rem 2rem;
+    justify-content: space-around;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .client-images-with{
+    width: 80%;
+  }
 }
 /* ////for MOBILE  */
 @media screen and (max-width: 600px) {

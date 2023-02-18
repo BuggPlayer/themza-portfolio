@@ -9,7 +9,7 @@ function Navbar() {
     { id: 5, name: "Clients", link: "#clients" },
     { id: 6, name: "Contact", link: "#contact" },
     { id: 7, name: "Login", link: "#login" },
-    { id: 8, name: "SignUp", link: "#signup", css: "signup-btn" },
+    // { id: 8, name: "SignUp", link: "#signup", css: "signup-btn" },
   ];
 
   const [showHeader, setShowHeader] = useState(false);

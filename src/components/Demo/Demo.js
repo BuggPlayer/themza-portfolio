@@ -1,17 +1,21 @@
 import React from "react";
-import "./demo.css"
+import "./demo.css";
 const Demo = () => {
   return (
-    <section className="bg-light">
+    <section className="bg-color-main">
       <article className="section-demo-flex">
         <h2>
-          Get Started With <span className="text-primary">Thamza</span>
+          Get Started With <span className="text-primary">Buggplayer</span>
         </h2>
         <p className="demo-p-text-w ">
-          Quisque iaculis urna eu magna semper quis ultrices lectus efficitur
-          Praesent convallis velit urna, vitae tristique tellus feugiat a
-          maecenas diam metus convallis id cursus vel tellus.
-          <br /> Curabitur ullamcorper feugiat convallis.
+          We provide Technology Services to our customers,
+          enabling them to achieve superior business outcomes. We come in as a
+          trusted Partner completely owning the Technology piece. We brainstorm
+          your business problems, arrive at the right solution framework, deploy
+          the right blend of technical resources, and thereon provide optimal
+          delivery at every step of the project implementation. We offer a
+          variety of services in the area of Mobile Apps Development, Software
+          Development, Web Application Development and Digital Marketing.
         </p>
         <div className="row">
           <button className="btn btn-soft-primary btn-round mr-3 btn-rounded">

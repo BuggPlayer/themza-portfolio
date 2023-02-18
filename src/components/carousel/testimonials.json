@@ -2,30 +2,30 @@
   "data": [
     {
       "is_active": 1,
-      "user_name": "Brandon Carney",
-      "designation": "Designer",
-      "description": "The European languages are members of theSame family Their      separate existence is a myth For science, music, sport, etc,      europe convals d feugiat egdgfet cursus tellus their languages      common words.",
+      "user_name": "",
+      "designation": "BusinessMan",
+      "description": "Excellent service. Quick response, efficient troubleshooting and resolution with full explanation of the problem. Gotta love Team!",
       "profile_image": "../../../assets/img/testimonial1.svg"
     },
     {
       "is_active": 0,
       "user_name": "Samuel Campbell",
-      "designation": "Developer",
-      "description": "The European languages are members of theSame family Their      separate existence is a myth For science, music, sport, etc,      europe convals d feugiat egdgfet cursus tellus their languages      common words.",
+      "designation": "Constaltant",
+      "description": "It has been a pleasure working with you and your staff, and I can only rave over the high standards that you have maintained relative to our hardware and software.",
       "profile_image": "../../../assets/img/testimonial2.svg"
     },
     {
       "is_active": 0,
       "user_name": "Michelle Stahley",
       "designation": "Manager",
-      "description": "The European languages are members of theSame family Their      separate existence is a myth For science, music, sport, etc,      europe convals d feugiat egdgfet cursus tellus their languages      common words.",
+      "description": "The Buggplayer team did a very good job in pulling together the data I needed when I couldn't find the time to do it myself. It has been a pleasure working with the team, and I am pretty sure I will ask buggplayer for help again in the future.",
       "profile_image": "../../../assets/img/testimonial3.svg"
     },
     {
       "is_active": 0,
       "user_name": "Margaret Lampley",
-      "designation": "CEO",
-      "description": "The European languages are members of theSame family Their      separate existence is a myth For science, music, sport, etc,      europe convals d feugiat egdgfet cursus tellus their languages      common words.",
+      "designation": "",
+      "description": "We had a brilliant experience working with BuggPlayer. They delivered great solutions, the quality of their work was excellent and was all delivered on time. The team was a pleasure to work with",
       "profile_image": "../../../assets/img/testimonial4.svg"
     }
   ]

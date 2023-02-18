@@ -26,7 +26,7 @@ export const serviceData = [
   {
     id: 2,
     name: "Mobile Application Development",
-    desc: "Get top-notch mobile applications that run on multiple platforms costs while providing your users with an app that fits their OS. Use this alternative to reduce costs and time-to-market and to reach more users without loss of quality, including:",
+    desc: "Get top-notch mobile applications that run on multiple platforms costs while providing your users with an app that fits their OS. Use this alternative to reduce costs and time-to-market and to reach more users without loss of quality.",
     icon: "./assets/img/app-development.png",
   },
   {
@@ -50,7 +50,7 @@ export const serviceData = [
   {
     id: 6,
     name: "Digital Marketing",
-    desc: "Scalable marketing for every stage of your funnel and every milestone of your sales funnel.",
+    desc: " Digital Marketing Services is the top trending way to advertise the brand, products, services using technological components like the internet, computer, mobile phones, etc. This type of service helps small or big businesses market their brand name/product over the internet, reaching millions of possible customers..",
     icon: "./assets/img/social-media.png",
   },
 ];
