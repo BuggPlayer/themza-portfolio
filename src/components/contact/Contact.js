@@ -111,7 +111,7 @@ const Contact = () => {
                 id="submit"
                 name="send"
                 color="primary"
-                type="submit"
+                type="button"
                 className="submitBnt btn btn-primary btn-round form-control"
                 value="Send Message"
                 style={{ width: "auto", color: "rgb(255, 255, 255)" }}
