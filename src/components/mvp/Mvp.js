@@ -5,7 +5,6 @@ export const Mvp = () => {
     <section id="mvp">
       <h5 className="text-center">MVP IN A MONTH</h5>
       <article className="mvp-content">
-        <div>
           <div className="mvp-content-head">
             <div className="square" />
             <h1 className="mvp-content-heading">
@@ -67,12 +66,11 @@ export const Mvp = () => {
               ].map((item, index) => (
                 <li key={index} className="">
                   <span>{item.timeRange}</span>
-                  <a>{item.task}</a>
+                  <p>{item.task}</p>
                 </li>
               ))}
             </ul>
           </div>
-        </div>
       </article>
     </section>
   );
