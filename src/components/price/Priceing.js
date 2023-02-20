@@ -16,7 +16,7 @@ const Priceing = () => {
       </article>
 
       <div className="pricing-card-container">
-        {[1, 2, 3].map((item) => {
+        {[1, 2, 3, 4].map((item) => {
           return (
             <div className="pricing-card">
               <img

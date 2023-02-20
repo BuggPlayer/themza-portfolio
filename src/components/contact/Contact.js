@@ -1,7 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
 import { contactUsHeadling, contactUsSubtitle } from "../../utiliti/Data";
+import { validateInput } from "../../utiliti/Utils";
+import { Input } from "../input/Input";
 import "./contact.css";
+
 const Contact = () => {
+  const [formInput, setFormInput] = useState({
+    name: "",
+    lastname: "",
+    email: "",
+    comments: "",
+  });
+  const [errorMessages, setErrorMessages] = useState({
+    name: "",
+    lastname: "",
+    email: "",
+    comments: "",
+  });
+  const [error, setError] = useState({
+    name: false,
+    lastname: false,
+    email: false,
+    comments: false,
+  });
+
+  const onSubmitHandler = async (ev) => {
+    ev.preventDefault();
+    if (!Object.values(error).includes(true)) {
+      const postData = formInput;
+      console.log(postData);
+      return;
+    }
+  };
+
+  const onChangeHandler = (ev, field) => {
+    const inputElement = ev.target.value;
+    validateInput(ev, field, error, errorMessages, setError, setErrorMessages);
+    let formInputCopy = formInput;
+    formInputCopy = { ...formInputCopy, [field]: inputElement };
+    setFormInput(formInputCopy);
+  };
+
   return (
     <section className="" id="contact">
       <article className="contact-summary-section">
@@ -14,46 +53,60 @@ const Contact = () => {
           <img className="img-fluid" src={"./assets/img/bg_1.svg"} />
         </div>
         <form
+          onSubmit={(ev) => {
+            onSubmitHandler(ev);
+          }}
           method="post"
           name="contact-form"
           id="contact-form"
-         
+
           // style={{ width: "45%" }}
         >
-          <div className="contact-input-flex" >
-
-            
-            <div className="">
-              <label className="">First Name</label>
-              <input
-                name="name"
-                id="name"
-                type="text"
-                className="form-control "
-              />
-            </div>
-
-            <div className="mt-3 form-group">
-              <label className="">Last Name</label>
-              <input
-                name="name"
-                id="lastname"
-                type="text"
-                className="form-control margin-left"
-              />
-            </div>
+          <div className="contact-input-flex">
+            <Input
+              value={formInput.name}
+              hasError={error.name}
+              errorMessage={errorMessages.name}
+              addClass2="form-control"
+              labelText="First Name"
+              fieldName="name"
+              fieldType="text"
+              fieldId="name"
+              onChange={(ev) => {
+                onChangeHandler(ev, "name");
+              }}
+            />
+            <Input
+              value={formInput.lastname}
+              hasError={error.lastname}
+              errorMessage={errorMessages.lastname}
+              addClass="mt-3 form-group"
+              addClass2="form-control"
+              labelText="Last Name"
+              fieldName="lastname"
+              fieldType="text"
+              fieldId="lastname"
+              onChange={(ev) => {
+                onChangeHandler(ev, "lastname");
+              }}
+            />
           </div>
           <div className="">
             <div className="col-lg-12">
-              <div className="mt-3 form-group">
-                <label className="">Email Address</label>
-                <input
-                  name="email"
-                  id="email"
-                  type="email"
-                  className="form-control form-control"
-                />
-              </div>
+              <Input
+                value={formInput.email}
+                hasError={error.email}
+                errorMessage={errorMessages.email}
+                addClass="mt-3 form-group"
+                addClass2="form-control"
+                labelText="Email Address"
+                fieldName="email"
+                fieldType="email"
+                fieldId="email"
+                onChange={(ev) => {
+                  onChangeHandler(ev, "email");
+                }}
+              />
             </div>
           </div>
           <div className="row">
@@ -61,11 +114,18 @@ const Contact = () => {
               <div className="">
                 <label className="">Your Message</label>
                 <textarea
+                  value={formInput.comments}
+                  onChange={(ev) => {
+                    onChangeHandler(ev, "comments");
+                  }}
                   name="comments"
                   id="comments"
                   rows={4}
                   className="form-control form-control"
                 ></textarea>
+                {error.comments && (
+                  <span style={{ color: "red" }}>{errorMessages.comments}</span>
+                )}
               </div>
             </div>
           </div>
@@ -75,7 +135,7 @@ const Contact = () => {
                 id="submit"
                 name="send"
                 color="primary"
-                type="submit"
+                type="button"
                 className="submitBnt btn btn-primary btn-round form-control"
                 value="Send Message"
                 style={{ width: "auto", color: "rgb(255, 255, 255)" }}
